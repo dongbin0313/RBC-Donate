@@ -12,8 +12,8 @@
 
 	div.question_background
 	{
-	    color: white;
-        background-color: rgb(0, 40, 136);
+	    color: black;
+        /*background-color: rgb(0, 40, 136);*/
 	    padding: 0.9em;
 	    -webkit-border-radius: 6px;
 	    -moz-border-radius: 6px;
@@ -21,7 +21,11 @@
 
 
 div.question_background > h1,h2,h3,h4,h5,h6,h7
-
 {
 	color:white;
+}
+
+body 
+{
+	background-image: url("../img/grid.png");
 }
