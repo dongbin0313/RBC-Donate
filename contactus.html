@@ -22,31 +22,15 @@
         <![endif]-->
 
         <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-
-<!-- ==========================================================================
-   Navbar Code
+<!--
+ Navbar Code
    ========================================================================== -->
 
         <div class="navbar navbar-fixed-top">
           <div class="navbar-inner">
 
             <div class="container-fluid" id="header-container">
-            
-              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <div id="back-btn"> <button class="btn btn-primary" onClick="history.go(-1);return true;">BACK</button> </div>
-              <a id="page-title" class="brand" href="#">Location Details</a>
-
-              <div class="nav-collapse collapse">
-                <ul class="nav">
-                  <li><a href="index.html">Home <span class="icon-home"></span></a></li>
-                  <li> <a id="font-button">Change Font Size  <span class="icon-font"></span></a></li>
-                  <li> <a href="#myModal" data-toggle="modal">About Age-CAP</a></li>
-                </ul>
+              <a id="page-title" class="brand" href="#">RBCDonate</a>
               </div><!--/.nav-collapse -->
 
             </div>
@@ -56,66 +40,89 @@
 <!-- ==========================================================================
    End Navbar Code
    ========================================================================== -->
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+
+<div class="container-fluid" id="header-container">
+
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+<div id="back-btn">
+
+<!--<form action = "file:///C:/Users/Kevin/Documents/GitHub/RBC-Donate/trial_index.html">
+<input type="submit" value="BACK">
+-->
+<button class="btn btn-primary" onClick="history.go(-1);return true;">BACK</button>
+
+</form>
+</div>
+<a id="page-title" class="brand" href="#">Contact Us</a>
+
+<div class="nav-collapse collapse">
+<ul class="nav">
+<li><a href="index.html">Home <span class="icon-home"></span></a></li>
+
+<li> <a href="#myModal" data-toggle="modal">About RBC Donate</a></li>
+</ul>
+</div><!--/.nav-collapse -->
+
+</div>
+</div>
+</div>
+
+<!-- ==========================================================================
+End Navbar Code
+========================================================================== -->
 
 <div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span8 offset2 question_background">
-            <h4>Fill in the details of the location below</h4>
-        </div> 
-    </div>
+<div class="row-fluid">
+<div class="span8 offset2 question_background">
+<h4>Fill in the details of the location below</h4>
+</div> 
+</div>
 
-    <div class="spacer10"></div>  
+<div class="spacer10"></div> 
 
 <div class="row-fluid">
 <div class="span8 offset2 question_background"> 
-    <form class="form-horizontal">
-       <div class="control-group">
-        <label class="control-label">Name of Location</label>
-        <div class="controls">
-          <input type="text" id="inputName" placeholder="Alice's Restaurant">
-        </div>
-      </div> 
+<form class="form-horizontal">
+<div class="control-group">
+<label class="control-label">First Name</label>
+<div class="controls">
+<input type="text" id="inputName" placeholder="Alice's Restaurant">
+</div>
+</div> 
 
-      <div class="control-group">
-        <label class="control-label">Street Address</label>
-        <div class="controls">
-          <input type="text" id="inputAddress" placeholder="1234 Address Rd.">
-        </div>
-      </div>
+<div class="control-group">
+<label class="control-label">Last Name</label>
+<div class="controls">
+<input type="text" id="inputAddress" placeholder="1234 Address Rd.">
+</div>
+</div>
 
-      <div class="control-group">
-        <label class="control-label">City</label>
-        <div class="controls">
-          <input type="text" id="inputCity" placeholder="Townsville">
-        </div>
-      </div>
+<div class="control-group">
+<label class="control-label">Email Address</label>
+<div class="controls">
+<input type="text" id="inputCity" placeholder="Townsville">
+</div>
+</div>
 
-      <div class="control-group">
-        <label class="control-label" for="inputProvince">Province/State</label>
-        <div class="controls">
-          <input type="text" id="inputProvince" placeholder="East Virginia">
-        </div>
-      </div>
+<div class="control-group">
+<label class="control-label" for="inputProvince">Charity Name</label>
+<div class="controls">
+<input type="text" id="inputProvince" placeholder="East Virginia">
+</div>
+</div>
 
-      <div class="control-group">
-        <label class="control-label">Postal Code</label>
-        <div class="controls">
-          <input type="text" id="inputPostal" placeholder="A1B 2C3">
-        </div>
-      </div>
-
-      <div class="control-group">
-        <label class="control-label" for="inputProvince">Country</label>
-        <div class="controls">
-          <input type="text" id="inputCountry" placeholder="Prussia">
-        </div>
-      </div>
-
-      <div class="control-group">
-        <div class="controls">
-          <a type="submit" class="btn btn-primary" id="submit-button">CONTINUE</a>
-        </div>
-      </div>
+<div class="control-group">
+<div class="controls">
+<a type="submit" class="btn btn-primary" id="submit-button">CONTINUE</a>
+</div>
+</div>
 </form>
 </div>
 <div class="percent-spacer"></div>
@@ -123,66 +130,20 @@
 </div> <!-- /container -->
 
 <!-- ==========================================================================
-  Modal Code
-   ========================================================================== -->
+Modal Code
+========================================================================== -->
 
-        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3 id="myModalLabel">About Age-CAP</h3>
-          </div>
-          <div class="modal-body">
-            <p style=\'text-align:justify\'>Age-CAP is a smartphone application which aims to create a crowd-sourced database of age-friendly locations. It consists of survey styled forms which enable users to quickly rate a location. Users are also able to browse this database to assess the age-friendliness of locations in their neighborhood, providing them access to information which was otherwise unavailable. <br><br>Age-CAP was created by a multi-disciplinary team from the Toronto Rehabilitation Institute, University Health Network and University of Toronto.<br><br>Feedback or questions: iatsl@utoronto.ca</p>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
-          </div>
-        </div>
-<!-- ==========================================================================
-   End Modal Code
-   ========================================================================== -->
-       
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery191min.js"><\/script>')</script> <!--- failsafe to load up jQuery if the online copy is unavailable-->
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script>
-        $("#submit-button").click(function() {
-
-        var ratingLocation = {name: $("#inputName").val(), address: $("#inputAddress").val(),
-                            city: $("#inputCity").val(), state: $("#inputProvince").val(), postal_code: $("#inputPostal").val(),
-                            country: $("#inputCountry").val()}
-
-        //localStorage.setItem("ratingLocation", JSON.stringify(ratingLocation)); 
-
-        //var dict = JSON.parse(localStorage.getItem("ratingLocation"));
-
-        var submission = "";
-
-        for (var key in ratingLocation) {if (key){submission += ratingLocation[key] + ", ";}}
-        submission = $.trim(submission);
-        if (submission.charAt(submission.length -1 ) == ","){
-          submission = submission.slice(0, -1);}
-
-        console.log(submission);
-
-        var geocoder = new google.maps.Geocoder();
-        geocoder.geocode({"address": submission}, function(results, status) {
-          if (status == google.maps.GeocoderStatus.OK){
-
-            ratingLocation["lat"] = results[0].geometry.location.jb
-            ratingLocation["lng"] = results[0].geometry.location.kb
-
-            localStorage.setItem("ratingLocation", JSON.stringify(ratingLocation));
-            window.location.href = 'ratingformfromtemplate.html';
-          }
-          else {
-            alert("Location not found. Please ensure you have entered the address information correctly.")
-          }
-        });
-
-        });
-        </script> 
-    </body>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">About RBC Donate</h3>
+</div>
+<div class="modal-body">
+<p style=\'text-align:justify\'>RBC Donate adds value to the company itself by using social media to advertise the bank through donations to non-profit organizations and events. RBC Donate app is for users who are interested in contributing towards a non-profit organization/charity but are unwilling to conduct research, but would readily support the cause if it were presented in a compact and quick access format. Donating to events can be a hassle for both the supporters and the organization. RBC Donate brings it to your Smartphone and Tablet to make it easy to support the people in need. <br><br>For more information please visit the RBC's main website. <br><br>Feedback or questions: contact@rbcdonate.ca</p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+</div>
+</div>
+</body>
 </html>
