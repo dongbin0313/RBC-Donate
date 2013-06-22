@@ -23,10 +23,58 @@
 
 div.question_background > h1,h2,h3,h4,h5,h6,h7
 {
-	color:white;
+	color:black;
 }
 
 body 
 {
 	background-image: url("../img/grid.png");
 }
+
+
+#back-btn
+{
+	padding:0 10px;
+	min-height:3em;
+	float:left;
+}
+
+.form-horizontal .control-label 
+{
+	text-align: left;
+}
+
+@media (min-width: 979px){
+
+	.form-horizontal .controls {
+		margin-left:60px;
+	}
+}
+
+	@media (max-width: 979px) {
+
+
+
+	      #page-title
+	      {
+			float:center;
+	      }
+
+	      .navbar-fixed-top,
+	      .navbar-fixed-bottom 
+	      {
+	      	position: fixed;
+	      }
+
+	      #header-container
+	      {
+	      	padding: 0 5%;
+	      }
+
+	      #back-btn
+		{
+			padding:0;
+			min-height:0;
+		}
+
+	    }
