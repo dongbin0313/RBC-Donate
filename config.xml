@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.camera.pgbtest" version="1.0.0">
     <name>
-        Geo Test
+        RBCDonate
     </name>
-        <description>
-        An example of Phonegap Geolocation. 
+
+    <description>
+        Seamlessly Integrates Social Media With Banking.
     </description>
 
     <author href="https://sub.example.com" email="someone@email.com">
-        Me
+        
     </author>
     
 	<feature name="http://api.phonegap.com/1.0/device"/>
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+
+    <gap:plugin name="FacebookConnect">
+       <param name="APP_ID" value="418772274904593" />
+       <param name="APP_NAME" value="RBCDonate" />
+    </gap:plugin>
  
 </widget>
